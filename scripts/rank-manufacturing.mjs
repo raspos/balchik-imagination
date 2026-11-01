@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const raw=read('public/data/raw/manufacturing-2024.json'),us=read('public/data/raw/us-manufacturing-2024.json'),countries=read('public/data/raw/countries.json').countries;
+const rows=raw[1].filter(r=>countries[r.countryiso3code]&&r.date==='2024'&&Number.isFinite(r.value)).map(r=>({id:r.countryiso3code,name:r.country.value,value:r.value,source:'World Bank WDI'}));
+if(rows.some(r=>r.id==='USA'))throw Error('US World Bank value now exists; review whether the BEA supplement is still needed');
+if(us.observations.length!==4||us.observations.some(r=>!r.date.startsWith('2024')))throw Error('Four matching-year quarters required');
+rows.push({id:'USA',name:'United States',value:us.observations.reduce((a,r)=>a+r.value,0)/4*1e9,source:'BEA via FRED VAMA; four quarterly SAAR values averaged'});
+const korea=rows.find(r=>r.id==='KOR').value,japan=rows.find(r=>r.id==='JPN').value,total=korea+japan;
+const ranked=[...rows.filter(r=>!['KOR','JPN'].includes(r.id)),{id:'UNION',name:'한국+일본',value:total,source:'단순 합계'}].sort((a,b)=>b.value-a.value);
+const result={year:2024,indicator:'NV.IND.MANF.CD',retrieved:'2026-11-01',source:'World Bank WDI · U.S. BEA via FRED',url:'https://data.worldbank.org/indicator/NV.IND.MANF.CD',usUrl:us.url,korea,japan,total,rank:ranked.findIndex(r=>r.id==='UNION')+1,coverage:rows.length,ranking:ranked,note:'2024년 현행 달러. 지역 합계는 IMF 국가 목록으로 제외하고, 확보된 경제체만 비교. 한국·일본을 제거한 뒤 단순 합계를 삽입. 미국은 BEA/FRED 분기 연율 4개 평균으로 보완. 국가별 산업 분류·개정 시점 차이 유의. GDP에 포함된 값.'};
+for(const p of ['src/data/manufacturing.json','public/data/manufacturing.json'])fs.writeFileSync(p,JSON.stringify(result));
+console.log(JSON.stringify({rank:result.rank,total,coverage:result.coverage,top:ranked.slice(0,5)},null,2));

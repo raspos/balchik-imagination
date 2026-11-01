@@ -1,0 +1,15 @@
+{
+  "source": "U.S. Bureau of Economic Analysis via Federal Reserve Bank of St. Louis FRED",
+  "series": "VAMA",
+  "url": "https://fred.stlouisfed.org/data/VAMA",
+  "retrieved": "2026-11-01",
+  "sourceUpdated": "2026-09-30",
+  "units": "Billions of current U.S. dollars, seasonally adjusted annual rate",
+  "observations": [
+    {"date": "2024-01-01", "value": 2853.7},
+    {"date": "2024-04-01", "value": 2881.5},
+    {"date": "2024-07-01", "value": 2891.5},
+    {"date": "2024-10-01", "value": 2903.4}
+  ],
+  "method": "2024 quarterly annual rates averaged, not summed; values transcribed from the official FRED data table."
+}
