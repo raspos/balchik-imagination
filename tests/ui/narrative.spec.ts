@@ -4,7 +4,7 @@ test('narrative, everyday comparisons, currency experiment and existing tools',a
  await expect(page.getByRole('heading',{level:1})).toContainText('한국과 일본이');
  await expect(page.locator('main>section')).toHaveCount(11);
  await expect(page.locator('body')).toHaveJSProperty('scrollWidth',await page.evaluate(()=>innerWidth));
- await page.getByRole('button',{name:'두 나라 함께 놓아보기'}).click();await expect(page.locator('.land-union')).toHaveClass(/is-joined/);await expect(page.locator('.land-ratio')).toHaveText('1 : 3.8');await expect(page.locator('.land-shape')).toHaveCount(2);
+ await expect(page.locator('.flag-union svg')).toBeVisible();await expect(page.locator('.flag-union image')).toHaveCount(2);await expect(page.locator('.land-union')).toHaveCount(0);
  await page.screenshot({path:`docs/${info.project.name}-hero.png`,fullPage:false});
  await expect(page.locator('#chapter-1')).toContainText('이시바 시게루');await expect(page.locator('#chapter-1')).toContainText('최태원');
  await expect(page.locator('.power-imf .power-rank')).toContainText('3');await expect(page.locator('.power-un .power-rank')).toContainText('8');await expect(page.locator('.power-sipri .power-rank')).toContainText('5');
