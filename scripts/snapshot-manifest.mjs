@@ -1,0 +1,5 @@
+import{readFile,writeFile,stat}from'node:fs/promises';
+import{createHash}from'node:crypto';
+const paths=['public/data/raw/countries.json','public/data/raw/gdp.json','public/data/raw/ppp.json','public/data/raw/debt.json','public/data/raw/indicators.json','docs/raw/un-projections.csv','docs/raw/un-metadata.json','docs/raw/geo.json','docs/raw/trend-korea.png','docs/raw/trend-japan.png','src/data/surveys.json','src/data/quotes.json','src/data/indicators.json','src/data/economy.json','src/data/comparisons.json','docs/raw/v2-ecb.txt','docs/raw/v2-seoul-housing.txt','docs/raw/v2-fertility.json','docs/raw/v2-life.json'];
+const files=await Promise.all(paths.map(async path=>({path,bytes:(await stat(path)).size,sha256:createHash('sha256').update(await readFile(path)).digest('hex')})));
+await writeFile('docs/data-manifest.json',JSON.stringify({createdAt:new Date().toISOString(),sourceDate:'2026-10-31',note:'These hashes identify the exact retained input/output snapshot; refresh is not automatic.',files},null,2));console.log('Snapshot files',files.length);

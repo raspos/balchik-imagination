@@ -1,0 +1,82 @@
+[
+  {
+    "id": "countries",
+    "url": "https://www.imf.org/external/datamapper/api/v1/countries",
+    "path": "public/data/raw/countries.json",
+    "bytes": 7095,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.758Z"
+  },
+  {
+    "id": "gdp",
+    "url": "https://www.imf.org/external/datamapper/api/v1/NGDPD?periods=2024,2025,2026",
+    "path": "public/data/raw/gdp.json",
+    "bytes": 157611,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:59.751Z"
+  },
+  {
+    "id": "ppp",
+    "url": "https://www.imf.org/external/datamapper/api/v1/PPPGDP?periods=2024",
+    "path": "public/data/raw/ppp.json",
+    "bytes": 159695,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:59.725Z"
+  },
+  {
+    "id": "debt",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024",
+    "path": "public/data/raw/debt.json",
+    "bytes": 97769,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.739Z"
+  },
+  {
+    "id": "population",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=400",
+    "path": "public/data/raw/population.json",
+    "bytes": 53610,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.013Z"
+  },
+  {
+    "id": "indicators",
+    "url": "https://api.worldbank.org/v2/country/KOR;JPN/indicator/SP.POP.65UP.TO.ZS?date=2024&format=json",
+    "path": "public/data/raw/indicators.json",
+    "bytes": 582,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.265Z"
+  },
+  {
+    "id": "eai2",
+    "url": "https://admin.eai.or.kr/attach/plupload/o_1jurea3pudhquuj2d2arfoqd1s.PNG",
+    "path": "public/data/raw/eai2.png",
+    "bytes": 26548,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.547Z"
+  },
+  {
+    "id": "eai3",
+    "url": "https://admin.eai.or.kr/attach/plupload/o_1jurea3pu39ee3dcp9n8ss9j1t.PNG",
+    "path": "public/data/raw/eai3.png",
+    "bytes": 22429,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.631Z"
+  },
+  {
+    "id": "eai1",
+    "url": "https://admin.eai.or.kr/attach/plupload/o_1jvn5kbs31tvv1q0k1bsn1a741ojia.jpg",
+    "path": "public/data/raw/eai1.png",
+    "bytes": 30186,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:58.547Z"
+  },
+  {
+    "id": "geo",
+    "url": "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson",
+    "path": "public/data/raw/geo.json",
+    "bytes": 14643641,
+    "status": "downloaded",
+    "retrievedAt": "2026-10-31T12:54:59.014Z"
+  }
+]

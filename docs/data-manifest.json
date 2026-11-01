@@ -1,0 +1,102 @@
+{
+  "createdAt": "2026-10-31T14:05:51.829Z",
+  "sourceDate": "2026-10-31",
+  "note": "These hashes identify the exact retained input/output snapshot; refresh is not automatic.",
+  "files": [
+    {
+      "path": "public/data/raw/countries.json",
+      "bytes": 7095,
+      "sha256": "dd2681215a17614e056ed15bdbab3fd1cf43f1d168920ff951cbe0f4f50dafb4"
+    },
+    {
+      "path": "public/data/raw/gdp.json",
+      "bytes": 157611,
+      "sha256": "7294ac0b3013e39b131f50f3aeb23eb31bfa30a3b77199538b1e05518ecb491c"
+    },
+    {
+      "path": "public/data/raw/ppp.json",
+      "bytes": 159695,
+      "sha256": "20f6eefdb5d1179892b296c5c6dad3d15838c41664acb29771fe57689fb894b9"
+    },
+    {
+      "path": "public/data/raw/debt.json",
+      "bytes": 97769,
+      "sha256": "bacd0d83be00b655c74c0953f1e72c4cbd7fcd24a9625d03993786b660bdf6a0"
+    },
+    {
+      "path": "public/data/raw/indicators.json",
+      "bytes": 582,
+      "sha256": "81cf464ebe93baf51aefbd9fc8c0fb91793b81519fa2e9712b8eeae36b0d529a"
+    },
+    {
+      "path": "docs/raw/un-projections.csv",
+      "bytes": 1172501,
+      "sha256": "a77c8da5a75a47c82057c12ae52a38f4f11e3333c2a39a8b0260928caee45aa2"
+    },
+    {
+      "path": "docs/raw/un-metadata.json",
+      "bytes": 2939,
+      "sha256": "c666b2ffba1f64479c8bcc56149edff519a5ed799e4b64d1fecb5350a431c320"
+    },
+    {
+      "path": "docs/raw/geo.json",
+      "bytes": 14643641,
+      "sha256": "392a03db8aa3ba82c105852655620129b11182b95dfc34ef046827ea7d0e5b8c"
+    },
+    {
+      "path": "docs/raw/trend-korea.png",
+      "bytes": 13552,
+      "sha256": "4d441ed5757d7de006cc2c5ed2ff50c7e63f250fc057216b401bea708690327f"
+    },
+    {
+      "path": "docs/raw/trend-japan.png",
+      "bytes": 13477,
+      "sha256": "96470c9016dc0bc7c23641b7ceecc22f8c09863616bcfec6d0d4b24055095019"
+    },
+    {
+      "path": "src/data/surveys.json",
+      "bytes": 3425,
+      "sha256": "52f0e1e3d3954105156d349cabb59b2e5ec0a03f1a6c49b4a57b0d2723fdef98"
+    },
+    {
+      "path": "src/data/quotes.json",
+      "bytes": 2204,
+      "sha256": "a463d0b6c55a47125cb47591d66018c8724a1f2a029e4865c5334aae08e8cb0a"
+    },
+    {
+      "path": "src/data/indicators.json",
+      "bytes": 7427,
+      "sha256": "7bcdeb8efc5dc0babf1b4470e8b0db047c432019e7c436ee3b0b20d8f5dcafd9"
+    },
+    {
+      "path": "src/data/economy.json",
+      "bytes": 123646,
+      "sha256": "06c6fcf624c8d772d13fbee1df2c18961139e3b060d42f8d68a60b0c8b8e9e12"
+    },
+    {
+      "path": "src/data/comparisons.json",
+      "bytes": 12276,
+      "sha256": "60f88484e0113c777d9941645fee3ec51a5124b02ce722944136777e07b867fd"
+    },
+    {
+      "path": "docs/raw/v2-ecb.txt",
+      "bytes": 1547,
+      "sha256": "c7620e39ea8dd6674479deb3336338f84da9d8a1cdda80fbafe58805ed7ca9b1"
+    },
+    {
+      "path": "docs/raw/v2-seoul-housing.txt",
+      "bytes": 642977,
+      "sha256": "5ab2cd1c88a2160f803a31f42cc9f5105050dc00b6e749618b4e3a52ae3d0822"
+    },
+    {
+      "path": "docs/raw/v2-fertility.json",
+      "bytes": 529,
+      "sha256": "c43e66dc72ec5add0c4624209f35547ed21f436c3d9bf1789dc4b690aca49dd9"
+    },
+    {
+      "path": "docs/raw/v2-life.json",
+      "bytes": 550,
+      "sha256": "50c48e27d03941d78a1ce0f10dd1582962b02e261a47a0e4080adfb3c70c19d8"
+    }
+  ]
+}

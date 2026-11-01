@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import{readFileSync}from'node:fs';
+import{combinedRanking,vote,splitSegments}from'../src/lib/model.mjs';
+const d=JSON.parse(readFileSync(new URL('../src/data/economy.json',import.meta.url)));
+const s=JSON.parse(readFileSync(new URL('../src/data/surveys.json',import.meta.url)));
+test('same-year GDP removes both members before ranking; missing values never become zero',()=>{for(const m of d.macro){const r=combinedRanking(m.rows);assert.equal(r.rank,3);assert.equal(r.rows.length,m.rows.length-1);assert.equal(r.rows.filter(x=>x.id==='KOR'||x.id==='JPN').length,0);assert.equal(r.total,m.rows.find(x=>x.id==='KOR').value+m.rows.find(x=>x.id==='JPN').value);}assert.equal(combinedRanking([{id:'KOR',value:2}]),null);assert.equal(combinedRanking([{id:'KOR',value:2},{id:'JPN',value:null}]),null);});
+test('UN same year yields 175470628 and rank 8, not political claim 7',()=>{const r=combinedRanking(d.population.rows);assert.equal(r.total,175470628);assert.equal(r.rank,8);assert.equal(r.rows[r.rank-2].id,'BRA');assert.equal(r.rows[r.rank].id,'BGD');});
+test('asymmetric population only gives Japan a unilateral majority under population rule',()=>{const share=51717587/175470628;assert.equal(vote('population',false,true,share).passed,true);assert.equal(vote('population',true,false,share).passed,false);for(const rule of ['equal','both','bicameral']){assert.equal(vote(rule,false,true,share).passed,false);assert.equal(vote(rule,true,true,share).passed,true);assert.equal(vote(rule,true,false,share).passed,false);}assert.equal(vote('veto',false,true,share,true).passed,false);assert.equal(vote('veto',false,true,share,false).passed,true);});
+test('Japan missing 2024 breaks the line, never interpolates; survey fractions stay within range',()=>{const segments=splitSegments(s.trend,'j');assert.equal(segments.length,2);assert.equal(segments[0].at(-1).year,2023);assert.equal(segments[1][0].year,2025);for(const r of s.trend)for(const k of ['k','j','kn','jn'])if(r[k]!=null)assert.ok(r[k]>=0&&r[k]<=100);assert.equal(s.chamber2026.kBreakdown.soon+s.chamber2026.kBreakdown.longTerm,69.8);});

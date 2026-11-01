@@ -1,0 +1,6 @@
+import{readFile,writeFile}from'node:fs/promises';
+const files=['src/main.tsx','src/data/content.ts','src/data/quotes.json','src/components/QuoteArchive.tsx','src/components/Story.tsx','src/components/DailyCompare.tsx','src/components/CurrencyBasket.tsx','src/data/comparisons.json'];
+const urls=[...new Set((await Promise.all(files.map(f=>readFile(f,'utf8')))).flatMap(s=>s.match(/https:\/\/[^\s"'<>}]+/g)??[]))];
+const results=[];let index=0;
+await Promise.all(Array.from({length:4},async()=>{while(index<urls.length){const url=urls[index++];try{const r=await fetch(url,{signal:AbortSignal.timeout(20000),headers:{'User-Agent':'BalchikDataVerification/1.0'}});const type=r.headers.get('content-type')??'';const body=type.includes('text/html')?(await r.text()).slice(0,100000):'';results.push({url,http:r.status,finalUrl:r.url,status:r.ok?/just a moment|being verified|access denied|captcha/i.test(body)?'manual-review-waf':'reachable':'manual-review',checkedAt:new Date().toISOString()});}catch(e){results.push({url,status:'manual-review',error:e.message,checkedAt:new Date().toISOString()});}}}));
+await writeFile('docs/link-check.json',JSON.stringify(results,null,2));console.log('URLs:',results.length,'Reachable:',results.filter(x=>x.status==='reachable').length);console.log(JSON.stringify(results.filter(x=>x.status!=='reachable'),null,2));

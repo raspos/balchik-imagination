@@ -1,0 +1,298 @@
+[
+  {
+    "name": "exports",
+    "id": "NE.EXP.GNFS.CD",
+    "url": "https://api.worldbank.org/v2/country/KOR;JPN/indicator/NE.EXP.GNFS.CD?date=2023:2024&format=json&per_page=100",
+    "source": "World Bank WDI",
+    "retrieved": "2026-10-31",
+    "lastUpdated": "2026-10-08",
+    "rows": [
+      {
+        "indicator": {
+          "id": "NE.EXP.GNFS.CD",
+          "value": "Exports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 920960002390.344,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.EXP.GNFS.CD",
+          "value": "Exports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 923420059650.996,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.EXP.GNFS.CD",
+          "value": "Exports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2024",
+        "value": 831889172091.318,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.EXP.GNFS.CD",
+          "value": "Exports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2023",
+        "value": 762299062736.35,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  {
+    "name": "imports",
+    "id": "NE.IMP.GNFS.CD",
+    "url": "https://api.worldbank.org/v2/country/KOR;JPN/indicator/NE.IMP.GNFS.CD?date=2023:2024&format=json&per_page=100",
+    "source": "World Bank WDI",
+    "retrieved": "2026-10-31",
+    "lastUpdated": "2026-10-08",
+    "rows": [
+      {
+        "indicator": {
+          "id": "NE.IMP.GNFS.CD",
+          "value": "Imports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 958381808469.152,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.IMP.GNFS.CD",
+          "value": "Imports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 988160815442.388,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.IMP.GNFS.CD",
+          "value": "Imports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2024",
+        "value": 755486201521.958,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NE.IMP.GNFS.CD",
+          "value": "Imports of goods and services (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2023",
+        "value": 755197457229.567,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  {
+    "name": "rd",
+    "id": "GB.XPD.RSDV.GD.ZS",
+    "url": "https://api.worldbank.org/v2/country/KOR;JPN/indicator/GB.XPD.RSDV.GD.ZS?date=2023:2024&format=json&per_page=100",
+    "source": "World Bank WDI",
+    "retrieved": "2026-10-31",
+    "lastUpdated": "2026-10-08",
+    "rows": [
+      {
+        "indicator": {
+          "id": "GB.XPD.RSDV.GD.ZS",
+          "value": "Research and development expenditure (% of GDP)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 2
+      },
+      {
+        "indicator": {
+          "id": "GB.XPD.RSDV.GD.ZS",
+          "value": "Research and development expenditure (% of GDP)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 3.44125,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 2
+      },
+      {
+        "indicator": {
+          "id": "GB.XPD.RSDV.GD.ZS",
+          "value": "Research and development expenditure (% of GDP)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2024",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 2
+      },
+      {
+        "indicator": {
+          "id": "GB.XPD.RSDV.GD.ZS",
+          "value": "Research and development expenditure (% of GDP)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2023",
+        "value": 4.94352,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 2
+      }
+    ]
+  },
+  {
+    "name": "perCapita",
+    "id": "NY.GDP.PCAP.CD",
+    "url": "https://api.worldbank.org/v2/country/KOR;JPN/indicator/NY.GDP.PCAP.CD?date=2023:2024&format=json&per_page=100",
+    "source": "World Bank WDI",
+    "retrieved": "2026-10-31",
+    "lastUpdated": "2026-10-08",
+    "rows": [
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CD",
+          "value": "GDP per capita (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 33797.1014287876,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CD",
+          "value": "GDP per capita (current US$)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 35215.003535366,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CD",
+          "value": "GDP per capita (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2024",
+        "value": 36238.639908315,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CD",
+          "value": "GDP per capita (current US$)"
+        },
+        "country": {
+          "id": "KR",
+          "value": "Korea, Rep."
+        },
+        "countryiso3code": "KOR",
+        "date": "2023",
+        "value": 35674.095995632,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      }
+    ]
+  }
+]

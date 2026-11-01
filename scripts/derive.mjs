@@ -1,0 +1,20 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const read=async p=>JSON.parse(await readFile(p,'utf8'));
+const countries=(await read('public/data/raw/countries.json')).countries;
+const gdp=(await read('public/data/raw/gdp.json')).values.NGDPD;
+const ppp=(await read('public/data/raw/ppp.json')).values.PPPGDP;
+const debt=(await read('public/data/raw/debt.json')).values.GGXWDG_NGDP;
+const un=(await readFile('docs/raw/un-projections.csv','utf8')).trim().split(/\r?\n/).slice(1).map(l=>l.split(','));
+const pop=un.filter(r=>r[2]==='2024'&&r[1]&&countries[r[1]]).map(r=>({id:r[1],name:r[0],value:Number(r[3]||r[4])})).filter(r=>Number.isFinite(r.value));
+const macro=[2024,2025,2026].map(year=>({year,rows:Object.entries(gdp).filter(([id,v])=>countries[id]&&Number.isFinite(v[year])).map(([id,v])=>({id,name:countries[id].label,value:v[year]})).sort((a,b)=>b.value-a.value)}));
+const age=(await read('public/data/raw/indicators.json'))[1];
+const details=['KOR','JPN'].map(id=>({id,gdp:gdp[id][2024],ppp:ppp[id][2024],debt:debt[id][2024],population:pop.find(p=>p.id===id)?.value??null,age:age.find(p=>p.countryiso3code===id)?.value??null}));
+if(details.some(d=>d.population==null))throw Error('UN 2024 population unavailable');
+const geo=await read('docs/raw/geo.json');
+function clip(poly){for(const[axis,edge,sign]of[[0,119,1],[0,151,-1],[1,25,1],[1,50,-1]]){let output=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length],insideA=(a[axis]-edge)*sign>=0,insideB=(b[axis]-edge)*sign>=0;const intersection=()=>{const t=(edge-a[axis])/(b[axis]-a[axis]);return[a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])];};if(insideA&&insideB)output.push(b);else if(insideA)output.push(intersection());else if(insideB)output.push(intersection(),b);}poly=output;}return poly;}
+const selected=geo.features.filter(f=>['KOR','JPN','PRK','CHN','RUS','TWN'].includes(f.properties['ISO3166-1-Alpha-3'])).map(f=>({id:f.properties['ISO3166-1-Alpha-3'],polygons:f.geometry.type==='MultiPolygon'?f.geometry.coordinates:[f.geometry.coordinates]})).map(f=>({...f,polygons:f.polygons.map(p=>clip(p[0].filter((_,i)=>i%4===0))).filter(p=>p.length>2).map(p=>p.map(pt=>pt.map(v=>Math.round(v*1000)/1000)))}));
+const output={retrieved:'2026-10-31',macro,population:{year:2024,source:'UN WPP 2024 / OWID 배포본',rows:pop.sort((a,b)=>b.value-a.value)},details,map:selected};
+await writeFile('src/data/economy.json',JSON.stringify(output));
+await writeFile('public/data/economy.json',JSON.stringify(output,null,2));
+for(const file of ['surveys','indicators','quotes'])await writeFile(`public/data/${file}.json`,await readFile(`src/data/${file}.json`));
+console.log('GDP economies',macro.map(x=>[x.year,x.rows.length]),'Population economies',pop.length,'Details',details);

@@ -1,0 +1,351 @@
+[
+  {
+    "url": "https://data.worldbank.org",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:25.919Z"
+  },
+  {
+    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:25.997Z"
+  },
+  {
+    "url": "https://www.sfu.ca/~kkasa/mundell_61.pdf",
+    "http": 200,
+    "finalUrl": "https://www.sfu.ca/~kkasa/mundell_61.pdf",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:26.218Z"
+  },
+  {
+    "url": "https://www.hankookilbo.com/news/article/A2026102914210003063",
+    "http": 200,
+    "finalUrl": "https://www.hankookilbo.com/news/article/A2026102914210003063",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:26.495Z"
+  },
+  {
+    "url": "https://www.eai.or.kr/press/press_01_view.php?no=13601",
+    "http": 200,
+    "finalUrl": "https://www.eai.or.kr/press/press_01_view.php?no=13601",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.375Z"
+  },
+  {
+    "url": "https://pyeongtaekcci.korcham.net/front/boardlink/boardlinkContentsView.do?boardId=13&contId=20120945275&menuId=3227",
+    "http": 200,
+    "finalUrl": "https://pyeongtaekcci.korcham.net/front/boardlink/boardlinkContentsView.do?boardId=13&contId=20120945275&menuId=3227",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.476Z"
+  },
+  {
+    "url": "https://doi.org/10.1017/S0007123408000409",
+    "http": 200,
+    "finalUrl": "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/postfunctionalist-theory-of-european-integration-from-permissiveconsensus-to-constraining-dissensus/60EA0C58491C06327A235761B08878D6",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.510Z"
+  },
+  {
+    "url": "https://www.eai.or.kr/press/press_01_view.php?no=13373",
+    "http": 200,
+    "finalUrl": "https://www.eai.or.kr/press/press_01_view.php?no=13373",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.736Z"
+  },
+  {
+    "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+    "http": 200,
+    "finalUrl": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.843Z"
+  },
+  {
+    "url": "https://ourworldindata.org/grapher/population-with-un-projections",
+    "http": 200,
+    "finalUrl": "https://ourworldindata.org/grapher/population-with-un-projections",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:27.956Z"
+  },
+  {
+    "url": "https://www.consilium.europa.eu/en/policies/how-eu-treaties-shaped-the-council-of-the-eu-and-the-european-council/",
+    "http": 403,
+    "finalUrl": "https://www.consilium.europa.eu/en/policies/how-eu-treaties-shaped-the-council-of-the-eu-and-the-european-council/",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:28.026Z"
+  },
+  {
+    "url": "https://www.consilium.europa.eu/en/council-eu/how-does-the-council-vote/qualified-majority/",
+    "http": 403,
+    "finalUrl": "https://www.consilium.europa.eu/en/council-eu/how-does-the-council-vote/qualified-majority/",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:28.069Z"
+  },
+  {
+    "url": "https://www.mofa.go.jp/a_o/na/kr/pageite_000001_01221.html",
+    "http": 200,
+    "finalUrl": "https://www.mofa.go.jp/a_o/na/kr/pageite_000001_01221.html",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:28.253Z"
+  },
+  {
+    "url": "https://www.mofa.go.jp/policy/other/bluebook/2025/en_html/chapter2/c020203.html",
+    "http": 200,
+    "finalUrl": "https://www.mofa.go.jp/policy/other/bluebook/2025/en_html/chapter2/c020203.html",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:28.278Z"
+  },
+  {
+    "url": "https://www.fgyo.org/the-institution/history-franco-german-youth-office",
+    "http": 200,
+    "finalUrl": "https://www.fgyo.org/the-institution/history-franco-german-youth-office",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:28.319Z"
+  },
+  {
+    "url": "https://population.un.org/wpp/",
+    "http": 200,
+    "finalUrl": "https://population.un.org/wpp/",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:28.480Z"
+  },
+  {
+    "url": "https://www.sipri.org/sites/default/files/Military%20Expenditure%202025.pdf",
+    "http": 200,
+    "finalUrl": "https://www.sipri.org/sites/default/files/Military%20Expenditure%202025.pdf",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:29.112Z"
+  },
+  {
+    "url": "https://european-union.europa.eu/principles-countries-history/history-eu/1990-99_en",
+    "http": 200,
+    "finalUrl": "https://european-union.europa.eu/principles-countries-history/history-eu/1990-99_en",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:29.164Z"
+  },
+  {
+    "url": "https://asean.org/our-communities/economic-community-2/",
+    "http": 307,
+    "finalUrl": "https://asean.org/our-communities/economic-community-2/",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:29.290Z"
+  },
+  {
+    "url": "https://www.norden.org/en/information/history-nordic-council",
+    "http": 403,
+    "finalUrl": "https://www.norden.org/en/information/history-nordic-council",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:29.296Z"
+  },
+  {
+    "url": "https://doi.org/10.1177/1354066107080129",
+    "http": 403,
+    "finalUrl": "https://journals.sagepub.com/doi/10.1177/1354066107080129",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:29.506Z"
+  },
+  {
+    "url": "https://www.ecb.europa.eu/euro/intro/html/index.en.html",
+    "http": 200,
+    "finalUrl": "https://www.ecb.europa.eu/euro/intro/html/index.en.html",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:29.837Z"
+  },
+  {
+    "url": "https://www.benelux.int/en/information-for-citizens/benelux-union/about-us/benelux-treaty/",
+    "http": 200,
+    "finalUrl": "https://www.benelux.int/en/information-for-citizens/benelux-union/about-us/benelux-treaty/",
+    "status": "manual-review-waf",
+    "checkedAt": "2026-10-31T14:06:30.093Z"
+  },
+  {
+    "url": "https://doi.org/10.1080/09692290903070887",
+    "http": 403,
+    "finalUrl": "https://www.tandfonline.com/doi/abs/10.1080/09692290903070887",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:30.100Z"
+  },
+  {
+    "url": "https://www.newstomato.com/ReadNews.aspx?no=1263802",
+    "http": 200,
+    "finalUrl": "https://www.newstomato.com/ReadNews.aspx?no=1263802",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.225Z"
+  },
+  {
+    "url": "https://www.consilium.europa.eu/en/policies/the-eu-single-market-benefits-facts-and-figures/",
+    "http": 403,
+    "finalUrl": "https://www.consilium.europa.eu/en/policies/the-eu-single-market-benefits-facts-and-figures/",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:30.291Z"
+  },
+  {
+    "url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.368Z"
+  },
+  {
+    "url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO/KOR/JPN",
+    "http": 200,
+    "finalUrl": "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO/KOR/JPN",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.686Z"
+  },
+  {
+    "url": "https://admin.eai.or.kr/process/file_download.php?no=9459",
+    "http": 200,
+    "finalUrl": "https://admin.eai.or.kr/process/file_download.php?no=9459",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.687Z"
+  },
+  {
+    "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.724Z"
+  },
+  {
+    "url": "https://doi.org/10.1017/CBO9780511760945",
+    "http": 200,
+    "finalUrl": "https://www.cambridge.org/core/books/us-leadership-history-and-bilateral-relations-in-northeast-asia/EEA7A10FA8D3AF1852B5915F20174DE5",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.909Z"
+  },
+  {
+    "url": "https://www.minimumwage.go.kr/minWage/policy/decisionMain.do",
+    "http": 200,
+    "finalUrl": "https://www.minimumwage.go.kr/minWage/policy/decisionMain.do",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.923Z"
+  },
+  {
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "http": 200,
+    "finalUrl": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.991Z"
+  },
+  {
+    "url": "https://doi.org/10.1017/CBO9780511770463.009",
+    "http": 200,
+    "finalUrl": "https://www.cambridge.org/core/books/abs/search-for-reconciliation/conclusion/4C4E15358D6BE25A007F3BBAD86A9D2C",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:30.997Z"
+  },
+  {
+    "url": "https://www.mhlw.go.jp/content/11200000/001756428.pdf",
+    "http": 200,
+    "finalUrl": "https://www.mhlw.go.jp/content/11200000/001756428.pdf",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.073Z"
+  },
+  {
+    "url": "https://saiteichingin.mhlw.go.jp/check/",
+    "http": 200,
+    "finalUrl": "https://saiteichingin.mhlw.go.jp/check/",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.174Z"
+  },
+  {
+    "url": "https://www.tesla.com/ko_kr/model3/design",
+    "http": 403,
+    "finalUrl": "https://www.tesla.com/ko_kr/model3/design",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:31.231Z"
+  },
+  {
+    "url": "https://www.tesla.com/ja_jp/model3/design",
+    "http": 403,
+    "finalUrl": "https://www.tesla.com/ja_jp/model3/design",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:31.254Z"
+  },
+  {
+    "url": "https://www.reins.or.jp/pdf/trend/mw/mw_202609_summary.pdf",
+    "status": "manual-review",
+    "error": "fetch failed",
+    "checkedAt": "2026-10-31T14:06:31.327Z"
+  },
+  {
+    "url": "https://seoul-heatmap.daslab.co.kr/open-data/",
+    "http": 200,
+    "finalUrl": "https://seoul-heatmap.daslab.co.kr/open-data/",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.353Z"
+  },
+  {
+    "url": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.372Z"
+  },
+  {
+    "url": "https://seoul-heatmap.daslab.co.kr/open-data/gu-monthly.json",
+    "http": 200,
+    "finalUrl": "https://seoul-heatmap.daslab.co.kr/open-data/gu-monthly.json",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.419Z"
+  },
+  {
+    "url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "http": 200,
+    "finalUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.431Z"
+  },
+  {
+    "url": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/methodology-and-limitations_49306c2c.html",
+    "http": 403,
+    "finalUrl": "https://www.oecd.org/en/publications/taxing-wages-2025_b3a95829-en/full-report/methodology-and-limitations_49306c2c.html",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:31.613Z"
+  },
+  {
+    "url": "https://news.seoul.go.kr/traffic/archives/345",
+    "http": 200,
+    "finalUrl": "https://news.seoul.go.kr/traffic/archives/345",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.687Z"
+  },
+  {
+    "url": "https://www.trendforce.com/presscenter/news/20260907-13219.html",
+    "http": 200,
+    "finalUrl": "https://www.trendforce.com/presscenter/news/20260907-13219.html",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:31.951Z"
+  },
+  {
+    "url": "https://www.tokyometro.jp/ticket/types/regular/index.html",
+    "http": 200,
+    "finalUrl": "https://www.tokyometro.jp/ticket/types/regular/index.html",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:32.687Z"
+  },
+  {
+    "url": "https://katohpm.com/blog/tokyo23ku-mansion-seiyaku-202609/",
+    "http": 200,
+    "finalUrl": "https://katohpm.com/blog/tokyo23ku-mansion-seiyaku-202609/",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:32.813Z"
+  },
+  {
+    "url": "https://www.topuniversities.com/qs-top-uni-wur",
+    "http": 403,
+    "finalUrl": "https://www.topuniversities.com/qs-top-uni-wur",
+    "status": "manual-review",
+    "checkedAt": "2026-10-31T14:06:32.905Z"
+  },
+  {
+    "url": "https://kokkai.ndl.go.jp/simple/detail?minId=121714080X00620250424",
+    "http": 200,
+    "finalUrl": "https://kokkai.ndl.go.jp/simple/detail?minId=121714080X00620250424",
+    "status": "reachable",
+    "checkedAt": "2026-10-31T14:06:33.749Z"
+  }
+]
