@@ -23,3 +23,5 @@
 .power-pair>span{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.country-rank{display:inline-block;font-size:11px;font-style:normal;font-weight:700;white-space:nowrap;color:#d8e4dd;background:#46645c55;border:1px solid #7f9b8c44;padding:3px 7px;border-radius:4px}.power-sipri .country-rank{color:#654c40;background:#c5b69b33;border-color:#a2927944}@media(max-width:640px){.power-pair{flex-direction:column!important;gap:9px!important}.power-pair>span{width:100%;font-size:13px}.country-rank{font-size:11px;padding:3px 7px}}
 
 .power-sipri .country-rank{color:#eed9d0;background:#79605655;border-color:#b9a09355}
+
+.footer-copyright{font-size:13px;color:inherit;white-space:nowrap;text-underline-offset:4px}.footer-copyright:hover{text-decoration:underline}
