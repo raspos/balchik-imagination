@@ -4,10 +4,10 @@ test('narrative, everyday comparisons, currency experiment and existing tools',a
  await expect(page.getByRole('heading',{level:1})).toContainText('한국과 일본이');
  await expect(page.locator('main>section')).toHaveCount(11);
  await expect(page.locator('body')).toHaveJSProperty('scrollWidth',await page.evaluate(()=>innerWidth));
- await expect(page.locator('.flag-union svg')).toBeVisible();await expect(page.locator('.flag-union image')).toHaveCount(2);await expect(page.locator('.land-union')).toHaveCount(0);
+ await expect(page.locator('.flag-union>svg')).toBeVisible();await expect(page.locator('.flag-union image')).toHaveCount(2);await expect(page.locator('.land-union')).toHaveCount(0);await expect(page.locator('.flag-piece-k')).toHaveCSS('animation-name','flag-join-k');await page.getByRole('button',{name:'국기 합치기 다시 보기'}).click();
  await page.screenshot({path:`docs/${info.project.name}-hero.png`,fullPage:false});
  await expect(page.locator('#chapter-1')).toContainText('이시바 시게루');await expect(page.locator('#chapter-1')).toContainText('최태원');
- await expect(page.locator('.power-imf .power-rank')).toContainText('3');await expect(page.locator('.power-un .power-rank')).toContainText('8');await expect(page.locator('.power-sipri .power-rank')).toContainText('5');
+ await expect(page.locator('.power-pair .country-rank')).toHaveCount(8);await expect(page.locator('.power-imf .power-rank')).toContainText('3');await expect(page.locator('.power-un .power-rank')).toContainText('8');await expect(page.locator('.power-sipri .power-rank')).toContainText('5');
  await page.locator('.ranking-fold>summary').click();await page.getByLabel('GDP 기준연도').selectOption('2026');await expect(page.locator('.power-imf .power-value')).toContainText('6.59');
  await page.locator('#chapter-2').getByRole('button',{name:'인구',exact:true}).click();await expect(page.locator('.ranking-panel .highlight')).toContainText('175.47');
  await expect(page.locator('.daily-car .local-price')).toContainText('엔');await expect(page.locator('.daily-car')).toContainText('만원 환산');await expect(page.locator('.daily-housing')).toContainText('다른 집계');
