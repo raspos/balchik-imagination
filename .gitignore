@@ -3,3 +3,7 @@ dist/
 test-results/
 playwright-report/
 *.zip
+
+# Japanese entry is generated from the shared source and reviewed dictionary
+src/ja/
+i18n/ja-missing.json

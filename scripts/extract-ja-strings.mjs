@@ -1,0 +1,5 @@
+import fs from 'node:fs';import ts from 'typescript';
+const strings=new Set();const add=s=>{s=s.trim();if(/[가-힣]/.test(s))strings.add(s)};
+for(const file of ['src/main.tsx','src/components/Story.tsx','src/components/DailyCompare.tsx','src/components/CurrencyBasket.tsx','src/components/QuoteArchive.tsx','src/components/FlagUnion.tsx','src/data/content.ts']){const tree=ts.createSourceFile(file,fs.readFileSync(file,'utf8'),ts.ScriptTarget.Latest,true);const walk=n=>{if(ts.isStringLiteral(n)||ts.isNoSubstitutionTemplateLiteral(n)||ts.isJsxText(n)||ts.isTemplateHead(n)||ts.isTemplateMiddle(n)||ts.isTemplateTail(n))add(n.text);ts.forEachChild(n,walk)};walk(tree)}
+for(const file of ['src/data/comparisons.json','src/data/quotes.json','src/data/surveys.json','src/data/manufacturing.json']){const walk=o=>{if(typeof o==='string')add(o);else if(o&&typeof o==='object')Object.values(o).forEach(walk)};walk(JSON.parse(fs.readFileSync(file,'utf8')))}
+fs.mkdirSync('i18n',{recursive:true});fs.writeFileSync('i18n/ja-source.json',JSON.stringify([...strings],null,2));console.log('Translation strings',strings.size);

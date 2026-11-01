@@ -1,0 +1,21 @@
+import{test,expect}from'@playwright/test';
+test('Japanese edition preserves calculations and supports switching, charts and source notes',async({page},info)=>{
+ test.setTimeout(90000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/ja/');await expect(page.locator('html')).toHaveAttribute('lang','ja');
+ await expect(page.getByRole('heading',{level:1})).toContainText('韓国と日本が');
+ await expect(page.locator('.language-switch a[lang=ja]')).toHaveAttribute('aria-current','page');
+ await expect(page.locator('main>section')).toHaveCount(11);await expect(page.locator('.power-pair .country-rank')).toHaveCount(8);
+ await expect(page.locator('.power-manufacturing .power-rank')).toContainText('3');
+ await expect(page.locator('.daily-wage')).toContainText('ウォン／時');await expect(page.locator('.daily-car')).toContainText('万ウォン');
+ await expect(page.locator('.daily-car .local-price')).toContainText('万円');
+ await page.locator('.flag-union>svg').evaluate(el=>el.getAnimations({subtree:true}).forEach(a=>a.finish()));
+ await page.screenshot({path:`docs/${info.project.name}-japanese.png`});
+ await page.locator('.ranking-fold>summary').click();await page.getByLabel('GDP基準年').selectOption('2026');await expect(page.locator('.power-imf .power-value')).toContainText('6.59');
+ await page.getByRole('button',{name:'社会',exact:true}).click();await expect(page.locator('.daily-birth')).toContainText('合計特殊出生率');await expect(page.locator('.daily-birth')).toContainText('0.75');
+ await page.locator('.power-imf .source-link').click();await expect(page.getByRole('dialog')).toContainText('IMF');await page.keyboard.press('Escape');
+ await page.locator('details').evaluateAll(nodes=>nodes.forEach(n=>(n as HTMLDetailsElement).open=true));
+ const text=(await page.locator('body').innerText()).replaceAll('한국어','');expect(text.match(/[가-힣]+/g)).toBeNull();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(await page.evaluate(()=>innerWidth));
+ await page.locator('.language-switch a[lang=ko]').click();await expect(page.locator('html')).toHaveAttribute('lang','ko');await expect(page.getByRole('heading',{level:1})).toContainText('한국과 일본이');
+ expect(errors).toEqual([]);
+});

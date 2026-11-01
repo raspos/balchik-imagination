@@ -25,3 +25,7 @@
 .power-sipri .country-rank{color:#eed9d0;background:#79605655;border-color:#b9a09355}
 
 .footer-copyright{font-size:13px;color:inherit;white-space:nowrap;text-underline-offset:4px}.footer-copyright:hover{text-decoration:underline}
+
+.language-switch{display:flex;align-items:center;gap:8px;margin-left:20px;font-size:12px;white-space:nowrap}.language-switch a{color:#96aeb7;text-decoration:none;padding:7px 1px}.language-switch a[aria-current=page]{color:#a3efd7;border-bottom:1px solid #a3efd7}.language-switch>span{color:#5b707d}.top-nav{margin-left:auto}html[lang=ja] body{font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}html[lang=ja] .story-hero h1{font-family:"Noto Serif JP","Yu Mincho",serif;font-size:clamp(40px,4.7vw,70px);letter-spacing:-.055em}html[lang=ja] .contents nav button{line-height:1.65}html[lang=ja] .story-lead{line-height:1.8}html[lang=ja] .daily-pair strong{font-size:clamp(30px,3vw,43px)}@media(max-width:640px){.language-switch{margin-left:auto;margin-right:12px;gap:6px;font-size:11px}html[lang=ja] .story-hero h1{font-size:clamp(27px,7.5vw,44px);letter-spacing:-.07em}html[lang=ja] .story-lead{font-size:21px!important}html[lang=ja] .section-heading h2{font-size:25px}}
+
+@media(max-width:640px){header .top-nav{display:none}.language-switch{flex-shrink:0}header .brand{font-size:16px}}
