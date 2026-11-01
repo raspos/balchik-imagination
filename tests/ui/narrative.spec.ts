@@ -4,7 +4,7 @@ test('narrative, everyday comparisons, currency experiment and existing tools',a
  await expect(page.getByRole('heading',{level:1})).toContainText('한국과 일본이');
  await expect(page.locator('main>section')).toHaveCount(11);
  await expect(page.locator('body')).toHaveJSProperty('scrollWidth',await page.evaluate(()=>innerWidth));
- await page.getByRole('button',{name:'두 나라 함께 놓아보기'}).click();await expect(page.locator('.story-hero')).toHaveClass(/joined/);await expect(page.locator('.union-ribbon')).toHaveCSS('opacity','1');
+ await page.getByRole('button',{name:'두 나라 함께 놓아보기'}).click();await expect(page.locator('.land-union')).toHaveClass(/is-joined/);await expect(page.locator('.land-ratio')).toHaveText('1 : 3.8');await expect(page.locator('.land-shape')).toHaveCount(2);
  await page.screenshot({path:`docs/${info.project.name}-hero.png`,fullPage:false});
  await expect(page.locator('#chapter-1')).toContainText('이시바 시게루');await expect(page.locator('#chapter-1')).toContainText('최태원');
  await expect(page.locator('.power-imf .power-rank')).toContainText('3');await expect(page.locator('.power-un .power-rank')).toContainText('8');await expect(page.locator('.power-sipri .power-rank')).toContainText('5');
@@ -16,7 +16,8 @@ test('narrative, everyday comparisons, currency experiment and existing tools',a
  const original=await page.locator('.basket-output strong').first().textContent();await page.getByLabel('새 통화 액면 단위').selectOption('10');await expect(page.locator('.basket-output strong').first()).not.toHaveText(original!);
  await page.getByLabel('원화 바스켓 비중').fill('100');await expect(page.locator('.basket-definition')).toContainText('10,000원 + 0엔');
  await page.locator('.basket-shocks>summary').click();await page.getByLabel('원화 가치 변화').fill('20');await expect(page.locator('.basket-controls')).toContainText('+20%');
- await page.getByLabel('여론조사 연도').fill('2024');await expect(page.locator('.poll-values')).toContainText('미실시');
+ await page.getByLabel('여론조사 연도').fill('2024');await expect(page.locator('.poll-values')).toContainText('미실시');await expect(page.locator('.poll-values')).toContainText('전년도 유지');await expect(page.locator('.carried-forward polyline')).toHaveAttribute('stroke-dasharray','6 6');await expect(page.locator('.carried-forward circle title')).toContainText('2023년 수치');
+ await page.locator('.line-chart').screenshot({path:`docs/${info.project.name}-sentiment.png`});
  await page.getByText('신뢰·관계 평가와 비호감 이유 더 보기',{exact:true}).click();await page.getByRole('button',{name:'일본 응답자',exact:true}).click();await expect(page.locator('.reasons')).toContainText('49.3%');
  await page.locator('.history-years').getByRole('button',{name:/2005/}).click();await expect(page.locator('.history-detail h3')).toHaveText('유럽헌법조약 부결');
  await page.locator('.outlook-tabs').getByRole('button',{name:/공동통화·연방/}).click();await expect(page.locator('.outlook-result')).toContainText('국민적·헌법적 합의');

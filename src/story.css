@@ -15,3 +15,5 @@
 @media(prefers-reduced-motion:reduce){.reveal,.reveal:not(.is-revealed){opacity:1;transform:none}.nation-panel,.country-silhouette,.union-ribbon,.join-button{transition:none}.daily-card{animation:none}}
 
 .local-price{display:block;margin-top:8px;font-size:clamp(1rem,1.5vw,1.25rem);font-weight:700;color:#575a5d}.daily-pair small{display:block}
+
+@media(min-width:641px){.power-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}.manufacturing-scale>strong{font-size:clamp(75px,7vw,115px);letter-spacing:-6px}.manufacturing-scale>b{font-size:26px}.power-manufacturing .power-value{font-size:20px}.manufacturing-source{font-size:12px}.manufacturing-source summary{cursor:pointer}.manufacturing-source p{font-size:13px!important}.manufacturing-source a{color:inherit;text-decoration:underline}@media(max-width:640px){.manufacturing-scale>strong{font-size:72px}.manufacturing-scale>b{font-size:21px}.power-manufacturing .power-value{font-size:17px}.manufacturing-source{grid-column:1/-1}}
